@@ -54,7 +54,7 @@
 }
 
 + (void)load {
-    MPKitRegister *kitRegister = [[MPKitRegister alloc] initWithName:@"Localytics" className:@"MPKitLocalytics" startImmediately:YES];
+    MPKitRegister *kitRegister = [[MPKitRegister alloc] initWithName:@"Localytics" className:@"MPKitLocalytics"];
     [MParticle registerExtension:kitRegister];
 }
 
@@ -68,10 +68,11 @@
 }
 
 #pragma mark MPKitInstanceProtocol methods
-- (instancetype)initWithConfiguration:(NSDictionary *)configuration startImmediately:(BOOL)startImmediately {
-    self = [super init];
-    if (!self || !configuration[@"appKey"]) {
-        return nil;
+- (MPKitExecStatus *)didFinishLaunchingWithConfiguration:(NSDictionary *)configuration {
+    MPKitExecStatus *execStatus = nil;
+    if (!configuration[@"appKey"]) {
+        execStatus = [[MPKitExecStatus alloc] initWithSDKCode:[[self class] kitCode] returnCode:MPKitReturnCodeRequirementsNotMet];
+        return execStatus;
     }
 
     NSString *customDimensions = configuration[@"customDimensions"];
@@ -100,13 +101,12 @@
     multiplyByOneHundred = [configuration[@"trackClvAsRawValue"] caseInsensitiveCompare:@"true"] != NSOrderedSame;
 
     _configuration = configuration;
-    _started = startImmediately;
+    _started = YES;
 
-    if (startImmediately) {
-        [self start];
-    }
+    [self start];
 
-    return self;
+    execStatus = [[MPKitExecStatus alloc] initWithSDKCode:[[self class] kitCode] returnCode:MPKitReturnCodeSuccess];
+    return execStatus;
 }
 
 - (void)dealloc {
