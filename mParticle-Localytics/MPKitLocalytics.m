@@ -116,7 +116,7 @@
 }
 
 - (void)start {
-    [Localytics integrate:self.configuration[@"appKey"]];
+    [Localytics integrate:self.configuration[@"appKey"] withLocalyticsOptions:nil];
     if ([UIApplication sharedApplication].applicationState != UIApplicationStateBackground) {
         [Localytics openSession];
     }

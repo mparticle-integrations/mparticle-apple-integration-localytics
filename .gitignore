@@ -47,7 +47,7 @@ Pods/
 #
 # Add this line if you want to avoid checking in source code from Carthage dependencies.
 Carthage/Checkouts
-
+Cartfile.resolved
 Carthage/Build
 
 # fastlane
@@ -62,5 +62,6 @@ fastlane/Preview.html
 fastlane/screenshots
 fastlane/test_output
 
+*.framework.zip
 **/Podfile.lock
 **/*.xcworkspace
