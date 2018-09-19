@@ -1,2 +1,2 @@
 binary "https://downloads.localytics.com/SDKs/iOS/Localytics.json" ~> 5.2
-github "mparticle/mparticle-apple-sdk" ~> 7.5.0
+github "mparticle/mparticle-apple-sdk" ~> 7.6.0
