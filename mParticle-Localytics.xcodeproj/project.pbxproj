@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D318FFC72121D37D00F41C55 /* MPKitLocalytics.h in Headers */ = {isa = PBXBuildFile; fileRef = D318FFC52121D37D00F41C55 /* MPKitLocalytics.h */; };
+		D318FFC72121D37D00F41C55 /* MPKitLocalytics.h in Headers */ = {isa = PBXBuildFile; fileRef = D318FFC52121D37D00F41C55 /* MPKitLocalytics.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D318FFC82121D37D00F41C55 /* MPKitLocalytics.m in Sources */ = {isa = PBXBuildFile; fileRef = D318FFC62121D37D00F41C55 /* MPKitLocalytics.m */; };
 		D318FFDD2121D82700F41C55 /* Localytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D318FFDB2121D82700F41C55 /* Localytics.framework */; };
 		D318FFDE2121D82700F41C55 /* mParticle_Apple_SDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D318FFDC2121D82700F41C55 /* mParticle_Apple_SDK.framework */; };
-		D318FFE12121DA4200F41C55 /* mParticle_Localytics.h in Headers */ = {isa = PBXBuildFile; fileRef = D318FFE02121DA4200F41C55 /* mParticle_Localytics.h */; };
+		D318FFE12121DA4200F41C55 /* mParticle_Localytics.h in Headers */ = {isa = PBXBuildFile; fileRef = D318FFE02121DA4200F41C55 /* mParticle_Localytics.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D318FFE32121DAD200F41C55 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D318FFE22121DAD200F41C55 /* AdSupport.framework */; };
 		D318FFE52121DAE200F41C55 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D318FFE42121DAE200F41C55 /* libsqlite3.tbd */; };
 		D318FFE72121DAF600F41C55 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D318FFE62121DAF600F41C55 /* libz.tbd */; };
