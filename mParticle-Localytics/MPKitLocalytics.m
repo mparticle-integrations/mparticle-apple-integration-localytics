@@ -128,7 +128,17 @@
     return execStatus;
 }
 
-- (MPKitExecStatus *)logCommerceEvent:(MPCommerceEvent *)commerceEvent {
+- (nonnull MPKitExecStatus *)logBaseEvent:(nonnull MPBaseEvent *)event {
+    if ([event isKindOfClass:[MPEvent class]]) {
+        return [self routeEvent:(MPEvent *)event];
+    } else if ([event isKindOfClass:[MPCommerceEvent class]]) {
+        return [self routeCommerceEvent:(MPCommerceEvent *)event];
+    } else {
+        return [[MPKitExecStatus alloc] initWithSDKCode:@(MPKitInstanceAppboy) returnCode:MPKitReturnCodeUnavailable];
+    }
+}
+
+- (MPKitExecStatus *)routeCommerceEvent:(MPCommerceEvent *)commerceEvent {
     MPKitExecStatus *execStatus = [[MPKitExecStatus alloc] initWithSDKCode:@(MPKitInstanceLocalytics) returnCode:MPKitReturnCodeSuccess forwardCount:0];
     
     switch (commerceEvent.action) {
@@ -148,7 +158,7 @@
             NSArray *expandedInstructions = [commerceEvent expandedInstructions];
             
             for (MPCommerceEventInstruction *commerceEventInstruction in expandedInstructions) {
-                [self logEvent:commerceEventInstruction.event];
+                [self routeEvent:commerceEventInstruction.event];
                 [execStatus incrementForwardCount];
             }
         }
@@ -158,18 +168,18 @@
     return execStatus;
 }
 
-- (MPKitExecStatus *)logEvent:(MPEvent *)event {
+- (MPKitExecStatus *)routeEvent:(MPEvent *)event {
     BOOL hasDuration = event.duration && ![event.duration isEqualToNumber:@0];
     
     if (!hasDuration) {
-        if (event.info) {
-            [Localytics tagEvent:event.name attributes:event.info];
+        if (event.customAttributes) {
+            [Localytics tagEvent:event.name attributes:event.customAttributes];
         }
         else {
             [Localytics tagEvent:event.name];
         }
     } else {
-        NSMutableDictionary<NSString *, id> *info = [event.info mutableCopy] ?: [NSMutableDictionary dictionary];
+        NSMutableDictionary<NSString *, id> *info = [event.customAttributes mutableCopy] ?: [NSMutableDictionary dictionary];
         info[@"event_duration"] = event.duration;
         [Localytics tagEvent:event.name attributes:[info copy]];
     }
@@ -180,7 +190,7 @@
 
 - (MPKitExecStatus *)logLTVIncrease:(double)increaseAmount event:(MPEvent *)event {
     long amount = lround(increaseAmount * (multiplyByOneHundred ? 100 : 1));
-    [Localytics tagEvent:event.name attributes:event.info customerValueIncrease:@(amount)];
+    [Localytics tagEvent:event.name attributes:event.customAttributes customerValueIncrease:@(amount)];
     
     MPKitExecStatus *execStatus = [[MPKitExecStatus alloc] initWithSDKCode:@(MPKitInstanceLocalytics) returnCode:MPKitReturnCodeSuccess];
     return execStatus;
