@@ -308,9 +308,17 @@
             break;
             
         default: {
-            NSArray *identifierStrings = @[@"Other", @"CustomerId", @"Facebook", @"Twitter", @"Google", @"Microsoft", @"Yahoo", @"Email", @"Alias", @"FacebookCustomAudienceId"];
-            NSString *identifier = identifierStrings[(NSInteger)identityType];
-            [Localytics setValue:identityString forIdentifier:identifier];
+            NSArray *identifierStrings = @[@"Other", @"CustomerId", @"Facebook", @"Twitter", @"Google", @"Microsoft", @"Yahoo", @"Email", @"Alias", @"FacebookCustomAudienceId", @"Other2", @"Other3", @"Other4", @"Other5", @"Other6", @"Other7", @"Other8", @"Other9", @"Other10", @"MobileNumber", @"PhoneNumber2", @"PhoneNumber3"];
+
+            NSUInteger type = (NSUInteger)identityType;
+            if (type < identifierStrings.count) {
+                NSString *identifier = identifierStrings[type];
+                [Localytics setValue:identityString forIdentifier:identifier];
+            } else {
+                MPKitExecStatus *execStatus = [[MPKitExecStatus alloc] initWithSDKCode:@(MPKitInstanceLocalytics) returnCode:MPKitReturnCodeFail];
+                return execStatus;
+            }
+            
         }
             break;
     }
