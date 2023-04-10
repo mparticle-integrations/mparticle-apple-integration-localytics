@@ -7,13 +7,13 @@ This repository contains the [Localytics](https://www.localytics.com) integratio
 1. Add the kit dependency to your app's Podfile or Cartfile:
 
     ```
-    pod 'mParticle-Localytics', '~> 7.0'
+    pod 'mParticle-Localytics', '~> 8'
     ```
 
     OR
 
     ```
-    github "mparticle-integrations/mparticle-apple-integration-localytics" ~> 7.0
+    github "mparticle-integrations/mparticle-apple-integration-localytics" ~> 8.0
     ```
 
 2. Follow the mParticle iOS SDK [quick-start](https://github.com/mParticle/mparticle-apple-sdk), then rebuild and launch your app, and verify that you see `"Included kits: { Localytics }"` in your Xcode console 
