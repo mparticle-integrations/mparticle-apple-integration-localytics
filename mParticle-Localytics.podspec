@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
         'LIBRARY_SEARCH_PATHS' => '$(inherited) $(PODS_ROOT)/Localytics/**',
         'FRAMEWORK_SEARCH_PATHS' => '$(inherited) $(PODS_ROOT)/Localytics/**'
     }
-    s.ios.user_target_xcconfig = { 'OTHER_LDFLAGS' => '$(inherited) -framework "CoreLocation"', 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+    s.ios.user_target_xcconfig = { 'OTHER_LDFLAGS' => '$(inherited) -framework "CoreLocation"' }
 
     s.tvos.deployment_target = "9.0"
     s.tvos.source_files      = 'mParticle-Localytics/*.{h,m,mm}'
@@ -35,6 +35,6 @@ Pod::Spec.new do |s|
         'LIBRARY_SEARCH_PATHS' => '$(inherited) $(PODS_ROOT)/Localytics/**',
         'FRAMEWORK_SEARCH_PATHS' => '$(inherited) $(PODS_ROOT)/Localytics/**'
     }
-    s.tvos.user_target_xcconfig = { 'OTHER_LDFLAGS' => '$(inherited) -framework "CoreLocation"', 'EXCLUDED_ARCHS[sdk=appletvsimulator*]' => 'arm64' }
+    s.tvos.user_target_xcconfig = { 'OTHER_LDFLAGS' => '$(inherited) -framework "CoreLocation"' }
 
 end
