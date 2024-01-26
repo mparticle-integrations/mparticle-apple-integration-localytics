@@ -22,8 +22,7 @@ Pod::Spec.new do |s|
 
     s.ios.pod_target_xcconfig = {
         'LIBRARY_SEARCH_PATHS' => '$(inherited) $(PODS_ROOT)/Localytics/**',
-        'FRAMEWORK_SEARCH_PATHS' => '$(inherited) $(PODS_ROOT)/Localytics/**',
-        'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'
+        'FRAMEWORK_SEARCH_PATHS' => '$(inherited) $(PODS_ROOT)/Localytics/**'
     }
     s.ios.user_target_xcconfig = { 'OTHER_LDFLAGS' => '$(inherited) -framework "CoreLocation"', 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
 
@@ -34,8 +33,7 @@ Pod::Spec.new do |s|
 
     s.tvos.pod_target_xcconfig = {
         'LIBRARY_SEARCH_PATHS' => '$(inherited) $(PODS_ROOT)/Localytics/**',
-        'FRAMEWORK_SEARCH_PATHS' => '$(inherited) $(PODS_ROOT)/Localytics/**',
-        'EXCLUDED_ARCHS[sdk=appletvsimulator*]' => 'arm64'
+        'FRAMEWORK_SEARCH_PATHS' => '$(inherited) $(PODS_ROOT)/Localytics/**'
     }
     s.tvos.user_target_xcconfig = { 'OTHER_LDFLAGS' => '$(inherited) -framework "CoreLocation"', 'EXCLUDED_ARCHS[sdk=appletvsimulator*]' => 'arm64' }
 
