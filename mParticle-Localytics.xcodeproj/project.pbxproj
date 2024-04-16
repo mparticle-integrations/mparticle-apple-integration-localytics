@@ -17,6 +17,7 @@
 		D318FFE72121DAF600F41C55 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D318FFE62121DAF600F41C55 /* libz.tbd */; };
 		D318FFE92121DB0600F41C55 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D318FFE82121DB0600F41C55 /* CoreLocation.framework */; };
 		D318FFEB2121DB1400F41C55 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D318FFEA2121DB1400F41C55 /* SystemConfiguration.framework */; };
+		D3D1C6B62BC8D64700ACFCAA /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = D3D1C6B52BC8D64700ACFCAA /* PrivacyInfo.xcprivacy */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,7 @@
 		D318FFE62121DAF600F41C55 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		D318FFE82121DB0600F41C55 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		D318FFEA2121DB1400F41C55 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		D3D1C6B52BC8D64700ACFCAA /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 		D318FFB02121D2FF00F41C55 = {
 			isa = PBXGroup;
 			children = (
+				D3D1C6B52BC8D64700ACFCAA /* PrivacyInfo.xcprivacy */,
 				D318FFBC2121D2FF00F41C55 /* mParticle-Localytics */,
 				D318FFBB2121D2FF00F41C55 /* Products */,
 				D318FFCA2121D78300F41C55 /* Frameworks */,
@@ -245,6 +248,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3D1C6B62BC8D64700ACFCAA /* PrivacyInfo.xcprivacy in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
