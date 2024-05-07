@@ -3,69 +3,27 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		536B2B4F2BEACB0D00BD3217 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 536B2B4E2BEACB0D00BD3217 /* PrivacyInfo.xcprivacy */; };
+		536B2B522BEACB2900BD3217 /* mParticle_Apple_SDK.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 536B2B502BEACB2900BD3217 /* mParticle_Apple_SDK.xcframework */; };
+		536B2B532BEACB2900BD3217 /* Localytics.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 536B2B512BEACB2900BD3217 /* Localytics.xcframework */; };
 		D318FFC72121D37D00F41C55 /* MPKitLocalytics.h in Headers */ = {isa = PBXBuildFile; fileRef = D318FFC52121D37D00F41C55 /* MPKitLocalytics.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D318FFC82121D37D00F41C55 /* MPKitLocalytics.m in Sources */ = {isa = PBXBuildFile; fileRef = D318FFC62121D37D00F41C55 /* MPKitLocalytics.m */; };
-		D318FFDD2121D82700F41C55 /* Localytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D318FFDB2121D82700F41C55 /* Localytics.framework */; };
-		D318FFDE2121D82700F41C55 /* mParticle_Apple_SDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D318FFDC2121D82700F41C55 /* mParticle_Apple_SDK.framework */; };
 		D318FFE12121DA4200F41C55 /* mParticle_Localytics.h in Headers */ = {isa = PBXBuildFile; fileRef = D318FFE02121DA4200F41C55 /* mParticle_Localytics.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D318FFE32121DAD200F41C55 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D318FFE22121DAD200F41C55 /* AdSupport.framework */; };
-		D318FFE52121DAE200F41C55 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D318FFE42121DAE200F41C55 /* libsqlite3.tbd */; };
-		D318FFE72121DAF600F41C55 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D318FFE62121DAF600F41C55 /* libz.tbd */; };
-		D318FFE92121DB0600F41C55 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D318FFE82121DB0600F41C55 /* CoreLocation.framework */; };
-		D318FFEB2121DB1400F41C55 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D318FFEA2121DB1400F41C55 /* SystemConfiguration.framework */; };
-		D3D1C6B62BC8D64700ACFCAA /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = D3D1C6B52BC8D64700ACFCAA /* PrivacyInfo.xcprivacy */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		D318FFD22121D78400F41C55 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D318FFCB2121D78300F41C55 /* mParticle-Apple-SDK.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = C9DD1DFF1D8A118400D3ABBE;
-			remoteInfo = "mParticle-iOS-SDK";
-		};
-		D318FFD42121D78400F41C55 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D318FFCB2121D78300F41C55 /* mParticle-Apple-SDK.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = C935A6B31D8A2B6B00A1EE2F;
-			remoteInfo = "mParticle-tvOS-SDK";
-		};
-		D318FFD62121D78400F41C55 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D318FFCB2121D78300F41C55 /* mParticle-Apple-SDK.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = C9DD20851D8A18F500D3ABBE;
-			remoteInfo = mParticle_iOS_SDKTests;
-		};
-		D318FFD82121D78400F41C55 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D318FFCB2121D78300F41C55 /* mParticle-Apple-SDK.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = C911FD7C1D8A3524002A3516;
-			remoteInfo = mParticle_tvOS_SDKTests;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
+		536B2B4E2BEACB0D00BD3217 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		536B2B502BEACB2900BD3217 /* mParticle_Apple_SDK.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:DLD43Y3TRP:mParticle, inc"; lastKnownFileType = wrapper.xcframework; name = mParticle_Apple_SDK.xcframework; path = Carthage/Build/mParticle_Apple_SDK.xcframework; sourceTree = "<group>"; };
+		536B2B512BEACB2900BD3217 /* Localytics.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Localytics.xcframework; path = Carthage/Build/Localytics.xcframework; sourceTree = "<group>"; };
 		D318FFBA2121D2FF00F41C55 /* mParticle_Localytics.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = mParticle_Localytics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D318FFBE2121D2FF00F41C55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D318FFC52121D37D00F41C55 /* MPKitLocalytics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MPKitLocalytics.h; sourceTree = "<group>"; };
 		D318FFC62121D37D00F41C55 /* MPKitLocalytics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MPKitLocalytics.m; sourceTree = "<group>"; };
-		D318FFCB2121D78300F41C55 /* mParticle-Apple-SDK.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "mParticle-Apple-SDK.xcodeproj"; path = "Carthage/Checkouts/mparticle-apple-sdk/mParticle-Apple-SDK.xcodeproj"; sourceTree = "<group>"; };
-		D318FFDB2121D82700F41C55 /* Localytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Localytics.framework; path = Carthage/Build/iOS/Localytics.framework; sourceTree = "<group>"; };
-		D318FFDC2121D82700F41C55 /* mParticle_Apple_SDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = mParticle_Apple_SDK.framework; path = Carthage/Build/iOS/mParticle_Apple_SDK.framework; sourceTree = "<group>"; };
 		D318FFE02121DA4200F41C55 /* mParticle_Localytics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mParticle_Localytics.h; sourceTree = "<group>"; };
-		D318FFE22121DAD200F41C55 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
-		D318FFE42121DAE200F41C55 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
-		D318FFE62121DAF600F41C55 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
-		D318FFE82121DB0600F41C55 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
-		D318FFEA2121DB1400F41C55 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		D3D1C6B52BC8D64700ACFCAA /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,13 +31,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D318FFEB2121DB1400F41C55 /* SystemConfiguration.framework in Frameworks */,
-				D318FFE92121DB0600F41C55 /* CoreLocation.framework in Frameworks */,
-				D318FFE72121DAF600F41C55 /* libz.tbd in Frameworks */,
-				D318FFE52121DAE200F41C55 /* libsqlite3.tbd in Frameworks */,
-				D318FFE32121DAD200F41C55 /* AdSupport.framework in Frameworks */,
-				D318FFDD2121D82700F41C55 /* Localytics.framework in Frameworks */,
-				D318FFDE2121D82700F41C55 /* mParticle_Apple_SDK.framework in Frameworks */,
+				536B2B532BEACB2900BD3217 /* Localytics.xcframework in Frameworks */,
+				536B2B522BEACB2900BD3217 /* mParticle_Apple_SDK.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,7 +42,6 @@
 		D318FFB02121D2FF00F41C55 = {
 			isa = PBXGroup;
 			children = (
-				D3D1C6B52BC8D64700ACFCAA /* PrivacyInfo.xcprivacy */,
 				D318FFBC2121D2FF00F41C55 /* mParticle-Localytics */,
 				D318FFBB2121D2FF00F41C55 /* Products */,
 				D318FFCA2121D78300F41C55 /* Frameworks */,
@@ -110,6 +62,7 @@
 				D318FFC52121D37D00F41C55 /* MPKitLocalytics.h */,
 				D318FFC62121D37D00F41C55 /* MPKitLocalytics.m */,
 				D318FFE02121DA4200F41C55 /* mParticle_Localytics.h */,
+				536B2B4E2BEACB0D00BD3217 /* PrivacyInfo.xcprivacy */,
 				D318FFBE2121D2FF00F41C55 /* Info.plist */,
 			);
 			path = "mParticle-Localytics";
@@ -118,27 +71,10 @@
 		D318FFCA2121D78300F41C55 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D318FFEA2121DB1400F41C55 /* SystemConfiguration.framework */,
-				D318FFE82121DB0600F41C55 /* CoreLocation.framework */,
-				D318FFE62121DAF600F41C55 /* libz.tbd */,
-				D318FFE42121DAE200F41C55 /* libsqlite3.tbd */,
-				D318FFE22121DAD200F41C55 /* AdSupport.framework */,
-				D318FFDB2121D82700F41C55 /* Localytics.framework */,
-				D318FFDC2121D82700F41C55 /* mParticle_Apple_SDK.framework */,
-				D318FFCB2121D78300F41C55 /* mParticle-Apple-SDK.xcodeproj */,
+				536B2B512BEACB2900BD3217 /* Localytics.xcframework */,
+				536B2B502BEACB2900BD3217 /* mParticle_Apple_SDK.xcframework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		D318FFCC2121D78300F41C55 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				D318FFD32121D78400F41C55 /* mParticle_Apple_SDK.framework */,
-				D318FFD52121D78400F41C55 /* mParticle_Apple_SDK.framework */,
-				D318FFD72121D78400F41C55 /* mParticle_iOS_SDKTests.xctest */,
-				D318FFD92121D78400F41C55 /* mParticle_tvOS_SDKTests.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,12 +135,6 @@
 			mainGroup = D318FFB02121D2FF00F41C55;
 			productRefGroup = D318FFBB2121D2FF00F41C55 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = D318FFCC2121D78300F41C55 /* Products */;
-					ProjectRef = D318FFCB2121D78300F41C55 /* mParticle-Apple-SDK.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				D318FFB92121D2FF00F41C55 /* mParticle-Localytics */,
@@ -212,43 +142,12 @@
 		};
 /* End PBXProject section */
 
-/* Begin PBXReferenceProxy section */
-		D318FFD32121D78400F41C55 /* mParticle_Apple_SDK.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = mParticle_Apple_SDK.framework;
-			remoteRef = D318FFD22121D78400F41C55 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		D318FFD52121D78400F41C55 /* mParticle_Apple_SDK.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = mParticle_Apple_SDK.framework;
-			remoteRef = D318FFD42121D78400F41C55 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		D318FFD72121D78400F41C55 /* mParticle_iOS_SDKTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = mParticle_iOS_SDKTests.xctest;
-			remoteRef = D318FFD62121D78400F41C55 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		D318FFD92121D78400F41C55 /* mParticle_tvOS_SDKTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = mParticle_tvOS_SDKTests.xctest;
-			remoteRef = D318FFD82121D78400F41C55 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
-
 /* Begin PBXResourcesBuildPhase section */
 		D318FFB82121D2FF00F41C55 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D3D1C6B62BC8D64700ACFCAA /* PrivacyInfo.xcprivacy in Resources */,
+				536B2B4F2BEACB0D00BD3217 /* PrivacyInfo.xcprivacy in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -14,6 +14,7 @@ Pod::Spec.new do |s|
 
     s.ios.deployment_target = "9.0"
     s.ios.source_files      = 'mParticle-Localytics/*.{h,m,mm}'
-    s.ios.dependency 'mParticle-Apple-SDK/mParticle', '~> 8.19'
+    s.ios.resource_bundles  = { 'mParticle-Localytics-Privacy' => ['mParticle-Localytics/PrivacyInfo.xcprivacy'] }
+    s.ios.dependency 'mParticle-Apple-SDK/mParticle', '~> 8.22'
     s.ios.dependency 'Localytics', '~> 6.3'
 end
