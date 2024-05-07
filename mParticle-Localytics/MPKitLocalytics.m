@@ -1,23 +1,9 @@
 #import "MPKitLocalytics.h"
-#import <CoreLocation/CoreLocation.h>
-#ifdef COCOAPODS
-#import "MPEvent.h"
-#import "MPCommerceEvent.h"
-#import "MPCommerceEvent+Dictionary.h"
-#import "MPCommerceEventInstruction.h"
-#import "MPTransactionAttributes.h"
-#import "MPTransactionAttributes+Dictionary.h"
-#import "MPProduct.h"
-#import "MPProduct+Dictionary.h"
-#import "mParticle.h"
-#import "MPKitRegister.h"
-#endif
 
-#import <Localytics/Localytics.h>
-
-#if TARGET_OS_IOS == 1 && __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_10_0
-#import <UserNotifications/UserNotifications.h>
-#import <UserNotifications/UNUserNotificationCenter.h>
+#if defined(__has_include) && __has_include(<Localytics/Localytics.h>)
+    #import <Localytics/Localytics.h>
+#else
+    #import "Localytics.h"
 #endif
 
 @interface MPKitLocalytics() {
