@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name             = "mParticle-Localytics"
-    s.version          = "8.1.0"
+    s.version          = "8.2.0"
     s.summary          = "Localytics integration for mParticle"
 
     s.description      = <<-DESC

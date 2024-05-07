@@ -1,3 +1,10 @@
+# [8.2.0](https://github.com/mparticle-integrations/mparticle-apple-integration-localytics/compare/v8.1.0...v8.2.0) (2024-05-07)
+
+
+### Features
+
+* Add SPM and Improve Privacy Manifest support ([#11](https://github.com/mparticle-integrations/mparticle-apple-integration-localytics/issues/11)) ([2a57aa4](https://github.com/mparticle-integrations/mparticle-apple-integration-localytics/commit/2a57aa456dce90d41003ec65721145b524275ec0))
+
 # [8.1.0](https://github.com/mparticle-integrations/mparticle-apple-integration-localytics/compare/v8.0.2...v8.1.0) (2024-04-17)
 
 
